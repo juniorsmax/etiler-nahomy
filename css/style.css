@@ -530,3 +530,10 @@ p { margin: 0 0 1em; }
   box-shadow: 0 25px 55px rgba(0,0,0,.6), 0 0 0 1px rgba(212,162,76,.25);
 }
 .promo-banner img { width: 100%; height: auto; object-fit: cover; }
+
+/* Oferta a una sola columna (el cartel ja es mostra a dalt) */
+.promo-card { grid-template-columns: 1fr; max-width: 760px; margin-inline: auto; }
+
+/* Control d'edat */
+.age-gate { width: min(460px, 92vw); text-align: center; }
+.age-gate .modal-foot { justify-content: center; }

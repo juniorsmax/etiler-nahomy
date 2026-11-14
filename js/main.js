@@ -118,49 +118,53 @@
     });
   });
 
+  /* ---------- Control d'edat ---------- */
+  const ageGate = document.getElementById('ageGate');
+  const ageYes = document.getElementById('ageYes');
+  const ageNo = document.getElementById('ageNo');
+  const ageOk = (() => { try { return sessionStorage.getItem('etiller-age') === 'ok'; } catch (e) { return false; } })();
+  if (ageGate && !ageOk) {
+    if (typeof ageGate.showModal === 'function') ageGate.showModal();
+    else ageGate.setAttribute('open', '');
+  }
+  if (ageYes) ageYes.addEventListener('click', () => {
+    try { sessionStorage.setItem('etiller-age', 'ok'); } catch (e) {}
+    ageGate.close();
+  });
+  if (ageNo) ageNo.addEventListener('click', () => {
+    ageGate.close();
+    document.body.innerHTML = '<main style="min-height:100vh;display:grid;place-items:center;text-align:center;padding:2rem;font-family:Lato,Arial,sans-serif;background:#0d0a07;color:#f6ecd9"><div><h1 style="font-family:Cinzel,Georgia,serif;color:#ecc97a">Accés no permès</h1><p>Aquesta web és només per a majors de 18 anys.</p></div></main>';
+  });
+
   /* ---------- Modal de información de producto ---------- */
   const PRODUCTS = {
-    ginger: {
-      tag: 'Gasosa · 33 cl',
-      name: 'Ginger Beer de Barril',
-      desc: 'Gingebre fresc pelat a mà, llima de Màlaga i un toc de mel de bruc. Fermentem 14 dies en barrils de roure i després la refredem a -2 °C per a una efervescència fina.',
-      facts: ['Sense alcohol · 0,0 %', 'Sense colorants ni conservants', 'Intensitat picant: mitjana'],
-      price: '2,80 €'
+    tona: {
+      tag: 'Cervesa · llauna',
+      name: 'Toña',
+      desc: 'Cervesa llatina, lleugera i refrescant. Es serveix ben freda, ideal per a una tarda de tardor amb amics.',
+      facts: ['Només per a majors de 18 anys', 'Servir ben freda', 'Consumir amb moderació'],
+      price: '2 €'
     },
-    cola: {
-      tag: 'Gasosa · 33 cl',
-      name: 'Cola de Canyella Artesana',
-      desc: 'Canyella de Ceilan, vainilla de Madagascar i ràmes de taronja. Una cola amb cos, dolça però equilibrada, pensada per acompanyar el menjar.',
-      facts: ['Sense alcohol · 0,0 %', 'Sucre de canya integral', 'Ideal amb gel i una llimona'],
-      price: '3,20 €'
-    },
-    llimonada: {
-      tag: 'Gasosa · 33 cl',
-      name: 'Llimonada de Fusta',
-      desc: 'Llimona de Sicília reposada 48 hores en roure amb menta de l\'hort. Refrescant, aromàtica i amb un final lleugerament amargant.',
-      facts: ['Sense alcohol · 0,0 %', 'Llimona de cultiu ecològic', 'Millor servida molt freda'],
+    salvavida: {
+      tag: 'Cervesa · ampolla',
+      name: 'Salva Vida',
+      desc: 'Cervesa rossa de cos lleuger, presentada en ampolla de vidre ambre. Un clàssic per acompanyar un àpat.',
+      facts: ['Només per a majors de 18 anys', 'Servir ben freda', 'Consumir amb moderació'],
       price: '2,50 €'
     },
-    te: {
-      tag: 'Infusió · 33 cl',
-      name: 'Té Fred de Poma i Mel',
-      desc: 'Te verd japonès infusionat en fred durant 12 hores amb poma reineta i mel de bruc. Suau, fresc i sense cap rastre de sucre afegit.',
-      facts: ['Sense alcohol · 0,0 %', 'Cafeïna natural moderada', 'Sense sucres afegits'],
-      price: '2,90 €'
+    lite: {
+      tag: 'Cervesa · llauna',
+      name: 'Lite',
+      desc: 'Cervesa rossa molt lleugera, pensada per beure amb calma en qualsevol moment de la tarda.',
+      facts: ['Només per a majors de 18 anys', 'Servir ben freda', 'Consumir amb moderació'],
+      price: '2 €'
     },
-    kombucha: {
-      tag: 'Fermentada · 33 cl',
-      name: 'Kombucha de Taronja Torrada',
-      desc: 'Te fermentat amb taronja torrada al forn i un fons de canyella. Lleugerament àcid, amb bombolles naturals i un perfil molt net.',
-      facts: ['Sense alcohol · 0,0 %', 'Cultiu viu de fermentació', 'Conservar entre 4 i 8 °C'],
-      price: '3,60 €'
-    },
-    tonica: {
-      tag: 'Gasosa · 25 cl',
-      name: 'Tònica Botànica',
-      desc: 'Quinina natural, enzim de poma i flors de saüc. Amarga just el necessari i és la companya perfecta d\'un aperitiu o d\'una tarda de tardor.',
-      facts: ['Sense alcohol · 0,0 %', 'Quinina d\'origen natural', 'Ideal amb botànics i fruita'],
-      price: '2,95 €'
+    flordecana: {
+      tag: 'Ron · ampolla de 70 cl',
+      name: 'Ron Flor de Caña',
+      desc: 'Ron ambre amb notes de caramel i fusta. Ideal sol, amb gel o com a base d\'un còctel.',
+      facts: ['Només per a majors de 18 anys', 'Servir a temperatura ambient o amb gel', 'Consumir amb moderació'],
+      price: '28 €'
     }
   };
 
