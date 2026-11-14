@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960" role="img" aria-labelledby="t d">
+  <title id="t">Ofertes de Tardor · ETILLER</title>
+  <desc id="d">Cartell amb begudes sense alcohol, fulles d'otoño i preus d'oferta.</desc>
+  <defs>
+    <radialGradient id="sky" cx="75%" cy="10%" r="90%">
+      <stop offset="0" stop-color="#e9a54a"/><stop offset=".45" stop-color="#b8642b"/><stop offset="1" stop-color="#2a1608"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#ecc97a"/><stop offset="1" stop-color="#d4a24c"/></linearGradient>
+    <linearGradient id="bottle" x1="0" x2="1"><stop offset="0" stop-color="#2a1409"/><stop offset=".4" stop-color="#6b3a1a"/><stop offset="1" stop-color="#1f0f06"/></linearGradient>
+    <linearGradient id="can" x1="0" x2="1"><stop offset="0" stop-color="#c9ccd1"/><stop offset=".5" stop-color="#fffdf7"/><stop offset="1" stop-color="#9aa0a8"/></linearGradient>
+    <linearGradient id="juice" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0b45a"/><stop offset="1" stop-color="#b8642b"/></linearGradient>
+    <linearGradient id="glass" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".25"/><stop offset=".5" stop-color="#fff" stop-opacity=".05"/><stop offset="1" stop-color="#fff" stop-opacity=".2"/></linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+
+  <!-- Fondo otoñal -->
+  <rect width="720" height="960" fill="url(#sky)"/>
+  <circle cx="560" cy="120" r="170" fill="#ecc97a" opacity=".25" filter="url(#soft)"/>
+  <circle cx="120" cy="600" r="150" fill="#d98a4e" opacity=".3" filter="url(#soft)"/>
+
+  <!-- Título -->
+  <text x="360" y="150" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-weight="900" font-size="58" fill="url(#gold)" letter-spacing="3">ESTE OTOÑO</text>
+  <text x="360" y="222" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-weight="900" font-size="46" fill="#fffdf7" letter-spacing="2">OFERTAS DE TARDOR</text>
+  <line x1="200" y1="252" x2="520" y2="252" stroke="#d4a24c" stroke-width="2"/>
+  <text x="360" y="286" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-style="italic" font-size="24" fill="#f6ecd9">Begudes sense alcohol amb sabor de fusta i fruita</text>
+
+  <!-- Taula de fusta -->
+  <rect x="0" y="790" width="720" height="170" fill="#2a1809"/>
+  <rect x="0" y="780" width="720" height="22" fill="#5a3a22"/>
+  <path d="M0 800 H720" stroke="#1f130b" stroke-width="3"/>
+
+  <!-- Ampolla -->
+  <g transform="translate(120 360)">
+    <path d="M42 0 h36 v60 q0 6 6 14 q14 18 14 46 v290 q0 22-22 22 h-32 q-22 0-22-22 v-290 q0-28 14-46 q6-8 6-14z" fill="url(#bottle)" stroke="#d4a24c" stroke-width="2"/>
+    <rect x="38" y="-10" width="44" height="18" rx="4" fill="#d4a24c"/>
+    <rect x="24" y="190" width="72" height="120" fill="#fffdf7" stroke="#d4a24c" stroke-width="2"/>
+    <text x="60" y="232" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-weight="900" font-size="14" fill="#1f130b">GINGER</text>
+    <text x="60" y="252" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-weight="900" font-size="14" fill="#1f130b">BARRICA</text>
+    <text x="60" y="284" text-anchor="middle" font-family="Lato, Arial, sans-serif" font-size="12" fill="#b8642b">2,80 €</text>
+  </g>
+
+  <!-- Llauna -->
+  <g transform="translate(300 420)">
+    <rect x="0" y="0" width="110" height="250" rx="12" fill="url(#can)" stroke="#d4a24c" stroke-width="2"/>
+    <rect x="0" y="0" width="110" height="26" rx="8" fill="#b8642b"/>
+    <rect x="0" y="222" width="110" height="28" fill="#b8642b"/>
+    <text x="55" y="110" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-weight="900" font-size="15" fill="#3b2314">LLIMONADA</text>
+    <text x="55" y="130" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-weight="900" font-size="15" fill="#3b2314">DE FUSTA</text>
+    <path d="M55 150 q-14 -16 0 -30 q14 14 0 30z" fill="#4d6b3a"/>
+    <text x="55" y="184" text-anchor="middle" font-family="Lato, Arial, sans-serif" font-size="12" fill="#3b2314">2,50 €</text>
+  </g>
+
+  <!-- Got -->
+  <g transform="translate(470 470)">
+    <path d="M0 0 h130 l-16 200 q-2 20-22 20 h-54 q-20 0-22-20z" fill="url(#juice)" stroke="#d4a24c" stroke-width="2"/>
+    <path d="M0 0 h130 l-16 200 q-2 20-22 20 h-54 q-20 0-22-20z" fill="url(#glass)"/>
+    <path d="M10 -20 q18 -10 40 0 t40 0 t40 0" fill="#fffdf7" opacity=".85"/>
+    <circle cx="48" cy="60" r="5" fill="#fffdf7" opacity=".6"/>
+    <circle cx="82" cy="110" r="4" fill="#fffdf7" opacity=".6"/>
+    <line x1="92" y1="-30" x2="104" y2="-120" stroke="#b8642b" stroke-width="6" stroke-linecap="round"/>
+    <ellipse cx="108" cy="-130" rx="18" ry="12" fill="#d98a4e" transform="rotate(-20 108 -130)"/>
+    <text x="65" y="120" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-weight="900" font-size="13" fill="#fffdf7">POMA I MEL</text>
+    <text x="65" y="176" text-anchor="middle" font-family="Lato, Arial, sans-serif" font-size="12" fill="#fffdf7">2,90 €</text>
+  </g>
+
+  <!-- Fulles -->
+  <g fill="#b8642b" opacity=".85">
+    <path d="M40 100 q30 -20 50 10 q-30 20 -50 -10z"/>
+    <path d="M660 200 q-30 -20 -50 10 q30 20 50 -10z"/>
+    <path d="M600 720 q30 -28 60 0 q-30 28 -60 0z" fill="#8c4a1f"/>
+    <path d="M70 840 q26 -26 56 -4 q-26 26 -56 4z" fill="#d98a4e"/>
+  </g>
+
+  <!-- Peu de l'oferta -->
+  <rect x="60" y="836" width="600" height="92" rx="10" fill="#1f130b" stroke="#d4a24c" stroke-width="2"/>
+  <text x="360" y="872" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-weight="900" font-size="22" fill="url(#gold)">PACK TARDOR · TÉ FRED + KOMBUCHA · 5,90 €</text>
+  <text x="360" y="906" text-anchor="middle" font-family="Lato, Arial, sans-serif" font-size="16" fill="#f6ecd9">Llimonada de Fusta 2 × 1 · Cola de Canyella 3 per 8 €</text>
+  <text x="360" y="946" text-anchor="middle" font-family="Lato, Arial, sans-serif" font-size="12" fill="#f6ecd9" opacity=".6">Ofertes fictícies · vàlides fins al 31 de desembre · IVA inclòs</text>
+</svg>
