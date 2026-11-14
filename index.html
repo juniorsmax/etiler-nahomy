@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ETILLER: begudes sense alcohol artesanes, elaborades amb tradició, fusta i sabor de tardor.">
+  <title>ETILLER · Begudes artesanes sense alcohol</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== CABECERA ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#inici" class="brand" aria-label="ETILLER, inici">
+        <img src="img/logo-etiller.jpg" alt="Logotip d'ETILLER" class="brand-logo" data-fallback="wordmark-logo">
+        <span class="wordmark" hidden>ETILLER</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Obrir el menú" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegació principal">
+        <ul>
+          <li><a href="#inici" class="nav-link active">Inici</a></li>
+          <li><a href="#nosaltres" class="nav-link">Nosaltres</a></li>
+          <li><a href="#productes" class="nav-link">Productes</a></li>
+          <li><a href="#contacte" class="nav-link">Contacte</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== PORTADA ===== -->
+    <section class="hero" id="inici">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="leaves" id="leaves" aria-hidden="true"></div>
+      <div class="hero-content container">
+        <p class="eyebrow reveal">Destil·leria de sabors sense alcohol · Est. 2025</p>
+        <h1 class="hero-title reveal">Sabor de <span>barril</span>,<br>cada gota amb ànima</h1>
+        <p class="hero-slogan reveal">«Tradició de fusta, esperit de carrer.»</p>
+        <a href="#productes" class="btn btn-gold reveal" data-scroll>Descobreix els productes</a>
+      </div>
+      <a href="#promocio" class="scroll-hint" aria-label="Anar a la promoció" data-scroll>
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===== CARTELL PROMOCIONAL ===== -->
+    <section class="promo" id="promocio">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Edició limitada</p>
+          <h2>Ofertes de Tardor</h2>
+          <div class="ornament" aria-hidden="true"></div>
+        </header>
+
+        <figure class="promo-banner reveal">
+          <img src="img/cartel-tardor.jpg" alt="Cartell promocional d'ofertes de tardor d'ETILLER" width="1438" height="2576" loading="lazy">
+        </figure>
+
+        <article class="promo-card reveal">
+          <div class="promo-poster">
+            <div class="promo-fallback">
+              <span class="pf-leaf" aria-hidden="true">🍂</span>
+              <p class="pf-kicker">Tardor · Edició limitada</p>
+              <p class="pf-title">Ofertes<br>de Tardor</p>
+              <p class="pf-sub">Begudes sense alcohol amb sabor de fusta i fruita</p>
+              <ul class="pf-list">
+                <li><span>Llimonada de Fusta</span><b>2,50 €</b></li>
+                <li><span>Cola de Canyella</span><b>8,00 €</b><small>pack 3</small></li>
+                <li><span>Pack Té Fred + Kombucha</span><b>5,90 €</b></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="promo-offers">
+            <h3>Les nostres ofertes</h3>
+            <ul class="offer-list">
+              <li class="offer">
+                <div class="offer-info">
+                  <span class="offer-name">Llimonada de Fusta</span>
+                  <span class="offer-note">Compra'n 2 i te'n portes 1 de regal</span>
+                </div>
+                <div class="offer-price"><span class="old">3,75 €</span><span class="new">2,50 €</span></div>
+              </li>
+              <li class="offer">
+                <div class="offer-info">
+                  <span class="offer-name">Cola de Canyella Artesana</span>
+                  <span class="offer-note">Pack de 3 ampolles</span>
+                </div>
+                <div class="offer-price"><span class="old">9,60 €</span><span class="new">8,00 €</span></div>
+              </li>
+              <li class="offer">
+                <div class="offer-info">
+                  <span class="offer-name">Pack Tardor: Té Fred + Kombucha</span>
+                  <span class="offer-note">Combinació de la temporada</span>
+                </div>
+                <div class="offer-price"><span class="old">6,50 €</span><span class="new">5,90 €</span></div>
+              </li>
+            </ul>
+            <p class="promo-legal">Ofertes fictícies, vàlides fins al 31 de desembre. Preus amb IVA inclòs.</p>
+            <a href="#productes" class="btn btn-copper" data-scroll>Veure tots els productes</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE NOSALTRES ===== -->
+    <section class="about" id="nosaltres">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <p class="eyebrow">La nostra història</p>
+          <h2>Un antic taller, una recepta de família</h2>
+          <div class="ornament ornament-left" aria-hidden="true"></div>
+          <p>ETILLER va néixer el 2025 en un vell magatzem de barrils del barri de Sants, a Barcelona. El seu fundador, Joan Ferrer, recuperava receptes de la rebesàvia que feia begudes de fruita, espècies i fusta per als veïns durant les festes.</p>
+          <p>Avui, cada beguda es cou a foc lent, es reposa en barrils de roure americà durant setmanes i s'embotella a mà en petites tirades. Cap aroma artificial, cap atall: només fruita de temporada, espècies i paciència.</p>
+          <p>Creiem que el sabor més elegant és el que es pren a poc a poc, en bona companyia.</p>
+          <ul class="values">
+            <li><span class="value-num">01</span> Ingredients de proximitat</li>
+            <li><span class="value-num">02</span> Maduració en barril de roure</li>
+            <li><span class="value-num">03</span> Zero alcohol, plena personalitat</li>
+          </ul>
+        </div>
+        <div class="about-visual reveal" aria-hidden="true">
+          <div class="barrel">
+            <div class="barrel-band top"></div>
+            <div class="barrel-label">
+              <span>ETILLER</span>
+              <small>Est. 2025 · Sants</small>
+            </div>
+            <div class="barrel-band bottom"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTES ===== -->
+    <section class="products" id="productes">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">La botiga</p>
+          <h2>Les nostres begudes</h2>
+          <div class="ornament" aria-hidden="true"></div>
+          <div class="filters" role="group" aria-label="Filtra per tipus">
+            <button class="filter-btn active" data-filter="tots">Totes</button>
+            <button class="filter-btn" data-filter="gasoses">Gasoses</button>
+            <button class="filter-btn" data-filter="infusions">Infusions</button>
+            <button class="filter-btn" data-filter="fermentades">Fermentades</button>
+          </div>
+        </header>
+
+        <div class="product-grid" id="productGrid">
+          <!-- Targeta 1 -->
+          <article class="product-card reveal" data-type="gasoses">
+            <div class="product-visual v-ginger"><span class="bottle-label">Ginger<br>Barrica</span></div>
+            <div class="product-body">
+              <span class="product-tag">Gasosa</span>
+              <h3>Ginger Beer de Barril</h3>
+              <p>Gingebre fresc, llima i un toc de mel. Fermentació lenta de 14 dies.</p>
+              <div class="product-foot">
+                <span class="price">2,80 €</span>
+                <button class="btn btn-small" data-product="ginger">Més informació</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Targeta 2 -->
+          <article class="product-card reveal" data-type="gasoses">
+            <div class="product-visual v-cola"><span class="bottle-label">Cola<br>Canyella</span></div>
+            <div class="product-body">
+              <span class="product-tag">Gasosa</span>
+              <h3>Cola de Canyella Artesana</h3>
+              <p>Canyella de Ceilan, vainilla i cítrics. Una cola amb caràcter de sobretaula.</p>
+              <div class="product-foot">
+                <span class="price">3,20 €</span>
+                <button class="btn btn-small" data-product="cola">Més informació</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Targeta 3 -->
+          <article class="product-card reveal" data-type="gasoses">
+            <div class="product-visual v-lemon"><span class="bottle-label">Llimonada<br>de Fusta</span></div>
+            <div class="product-body">
+              <span class="product-tag">Gasosa</span>
+              <h3>Llimonada de Fusta</h3>
+              <p>Llimona de Sicília reposada en roure amb menta de l'hort. Refrescant i sedosa.</p>
+              <div class="product-foot">
+                <span class="price">2,50 €</span>
+                <button class="btn btn-small" data-product="llimonada">Més informació</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Targeta 4 -->
+          <article class="product-card reveal" data-type="infusions">
+            <div class="product-visual v-tea"><span class="bottle-label">Té Fred<br>Poma i Mel</span></div>
+            <div class="product-body">
+              <span class="product-tag">Infusió</span>
+              <h3>Té Fred de Poma i Mel</h3>
+              <p>Te verd japonès infusionat en fred amb poma reineta i mel de bruc.</p>
+              <div class="product-foot">
+                <span class="price">2,90 €</span>
+                <button class="btn btn-small" data-product="te">Més informació</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Targeta 5 -->
+          <article class="product-card reveal" data-type="fermentades">
+            <div class="product-visual v-kombucha"><span class="bottle-label">Kombucha<br>Taronja</span></div>
+            <div class="product-body">
+              <span class="product-tag">Fermentada</span>
+              <h3>Kombucha de Taronja Torrada</h3>
+              <p>Te fermentat amb taronja torrada i un fons de canyella. Lleugerament àcida.</p>
+              <div class="product-foot">
+                <span class="price">3,60 €</span>
+                <button class="btn btn-small" data-product="kombucha">Més informació</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Targeta 6 -->
+          <article class="product-card reveal" data-type="gasoses">
+            <div class="product-visual v-tonic"><span class="bottle-label">Tònica<br>Botànica</span></div>
+            <div class="product-body">
+              <span class="product-tag">Gasosa</span>
+              <h3>Tònica Botànica</h3>
+              <p>Quinina natural, enzim de poma i flors de saüc. Perfecta per acompanyar un aperitiu.</p>
+              <div class="product-foot">
+                <span class="price">2,95 €</span>
+                <button class="btn btn-small" data-product="tonica">Més informació</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTE ===== -->
+    <section class="contact" id="contacte">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Parlem-ne</p>
+          <h2>Contacte</h2>
+          <div class="ornament" aria-hidden="true"></div>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <ul class="info-list">
+              <li>
+                <span class="info-icon" aria-hidden="true">✉</span>
+                <div><strong>Correu electrònic</strong><a href="mailto:hola@etiller.cat">hola@etiller.cat</a></div>
+              </li>
+              <li>
+                <span class="info-icon" aria-hidden="true">⌖</span>
+                <div><strong>Ubicació</strong><span>Carrer del Vell Barril, 14<br>08014 Barcelona</span></div>
+              </li>
+              <li>
+                <span class="info-icon" aria-hidden="true">◷</span>
+                <div><strong>Horari d'atenció</strong><span>Dl a dv: 9:00 – 18:00<br>Ds: 10:00 – 14:00 · Dg: tancat</span></div>
+              </li>
+            </ul>
+            <div class="socials" aria-label="Xarxes socials">
+              <a href="#" aria-label="Instagram" class="social">IG</a>
+              <a href="#" aria-label="Facebook" class="social">FB</a>
+              <a href="#" aria-label="TikTok" class="social">TT</a>
+              <a href="#" aria-label="X" class="social">X</a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" required autocomplete="name">
+              <small class="error" data-error-for="nom"></small>
+            </div>
+            <div class="field">
+              <label for="email">Correu electrònic</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <small class="error" data-error-for="email"></small>
+            </div>
+            <div class="field">
+              <label for="motiu">Motiu</label>
+              <select id="motiu" name="motiu">
+                <option value="consulta">Consulta general</option>
+                <option value="comanda">Comanda</option>
+                <option value="distribucio">Distribució i hostaleria</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="missatge">Missatge</label>
+              <textarea id="missatge" name="missatge" rows="5" required minlength="10"></textarea>
+              <small class="error" data-error-for="missatge"></small>
+            </div>
+            <button type="submit" class="btn btn-gold btn-block">Envia el missatge</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PEU ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#top" class="footer-brand" data-scroll>ETILLER</a>
+      <p>© 2026 ETILLER · Begudes artesanes sense alcohol · Marca fictícia</p>
+      <a href="#top" class="back-top" data-scroll aria-label="Tornar a dalt">↑</a>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL PRODUCTE ===== -->
+  <dialog class="modal" id="productModal" aria-labelledby="modalTitle">
+    <div class="modal-inner">
+      <button class="modal-close" aria-label="Tancar" data-close>×</button>
+      <p class="eyebrow" id="modalTag"></p>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <ul class="modal-facts" id="modalFacts"></ul>
+      <div class="modal-foot">
+        <span class="price" id="modalPrice"></span>
+        <a href="#contacte" class="btn btn-copper" data-close data-scroll>Demana'n informació</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
